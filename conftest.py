@@ -6,6 +6,8 @@ from pydantic import BaseModel
 import os
 from dotenv import load_dotenv
 
+from attach import add_video
+
 
 @pytest.fixture(scope='session', autouse=True)
 def data_search():
@@ -34,4 +36,5 @@ def data_search():
 
     yield
 
+    add_video(browser)
     browser.quit()

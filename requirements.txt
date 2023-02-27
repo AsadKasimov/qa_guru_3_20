@@ -1,6 +1,8 @@
 selene==2.0.0b17
-Appium-Python-Client==2.6.1
-browserstack-local==1.2.2
+Appium-Python-Client==2.8.1
+browserstack-local==1.2.4
 selenium~=4.8.2
 python-dotenv~=1.0.0
 pydantic~=1.10.5
+pytest>=7.2.0
+allure-pytest==2.12.0
