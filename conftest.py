@@ -5,11 +5,10 @@ from selene import browser
 from pydantic import BaseModel
 import os
 from dotenv import load_dotenv
-
 from attach import add_video
 
 
-@pytest.fixture(scope='session', autouse=True)
+@pytest.fixture(scope='function', autouse=True)
 def data_search():
     load_dotenv()
 
