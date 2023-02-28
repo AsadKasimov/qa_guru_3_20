@@ -1,5 +1,6 @@
 from appium.webdriver.common.appiumby import AppiumBy
-from selene import browser, have
+from selene import have
+from selene.support.shared import browser
 
 
 def test_search():
