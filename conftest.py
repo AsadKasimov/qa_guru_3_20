@@ -1,10 +1,12 @@
 import pytest
 from appium import webdriver
 from appium.options.android import UiAutomator2Options
-from selene import browser
+
 from pydantic import BaseModel
 import os
 from dotenv import load_dotenv
+from selene.support.shared import browser
+
 from attach import add_video
 
 
